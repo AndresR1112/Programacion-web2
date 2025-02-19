@@ -1,5 +1,6 @@
 
 
+
 let edad = prompt ("Dame tu edad"); 
 let nombre = prompt ("ingresa tu nombre: ");
 let localidad = prompt ("Ingresa tu localidad"); 

@@ -1,3 +1,4 @@
+
 // relacionales 
 let dato = 20 > 18;
 console.log(dato);

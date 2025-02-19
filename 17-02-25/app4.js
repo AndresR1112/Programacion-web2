@@ -1,3 +1,4 @@
+
 let numero1 = pronpt ("ingresa un numero:");
 let numero2 = prompt ("ingresa in numero2:"); 
 
