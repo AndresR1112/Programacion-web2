@@ -1,20 +1,13 @@
-let numeroMaquina = Math.floor(Math.random()*(10 - 1)-1);
-console.log(numeroMaquina);
+// Concatenacion
+let uno = "Hola";
+let dos = " mundo";
+var unir = uno + dos;
+console.log(unir);
 
-let numeroUser = parseInt(prompt("Adivina el Numero entre 1 y 10"));
+let edad = 31;
+let nombre= "Aaron";
+let localidad = "Xochimilco";
+let altura = 1.78;
+let peso = 82.75;
 
-let vidas=5;
-
-while( numeroMaquina !== numeroUser && vidas >1 ){
-    vidas--;
-    numeroUser = parseInt(prompt("Numero incorrecto, intentalo nuevamente, Tu vidas son:"+vidas))
-
-}
-
-if(numeroMaquina === numeroUser){
-    console.log("Ganaste");
-    alert("Ganaste");
-}else{
-    console.log("Perdiste");
-    alert("Perdiste");
-}
+console. log("1.- Mi nombre es:"+nombre+" \n 2.- Edad es:"+edad+" años");

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API WhatsApp</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body class="fondo">
+    <header class="titulo">
+        <h1 style="text-align: center;">Enviar mensaje a WhatsApp</h1>
+    </header>
+
+    <div class="formulario">
+        <label for="input1">Numero de telefono celular:</label>
+        <input type="text" id="input1" maxlength="12" placeholder="Ingresa el numero completo"><br><br>
+
+
+        <label for="input2">Mensaje a enviar:</label>
+        <textarea id="input2" maxlength="500" placeholder="Escribe tu mensaje ..."></textarea><br><br>
+
+        <div class="botones">
+            <button onclick="enviarWhatsApp()">Enviar por WhatsApp</button>
+            <button onclick="location.href= 'index.html'">Clear</button>
+        </div>
+    </div>
+
+</body>
+<script src="appApi.js"></script>
+
+</html>

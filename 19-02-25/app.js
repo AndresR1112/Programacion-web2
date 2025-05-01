@@ -1,67 +1,16 @@
-/*
-if (condicion){
-    ejecuta algo si la condicion es true
-}
-fin del programa
+let nombre = Aaron;
+	nombre = Mario;
+var edad = 5;
+var edad = ocho;
+	edad = 20;
+const puerto = 3306;
+	puerto = 3308;
 
+    console.log("Mi nombre es: ")
+        let nombre = "Aaron";
+    console.log(nombre);
 
-if (condicion){
-    ejecuta si la condicion true
-}else{
-    ejecuta si la condicion es false
-}
-*/
+    console.log("Edad: ")
+        let edad=31;
+    console.log(edad);
 
-/*
-let palabra = prompt("Ingresa el nombre de tu escuela");
-if(palabra == "UNAM"){
-    console.log("Palabra  correcta");
-    
-}else {
-    console.log("Error");
-}
-
-*/
-
-/*
-let numero = prompt("Ingresa un numero");
-if(numero == 10){
-    console.log("Bien :3");
-    console.log(typeof numero)
-}
-*/
-/*
-let dato =  prompt("Ingresa un dato");
-if(dato === 10){
-    console.log("Bien :3");
-}else {
-    console.log("No se puede bb por que es:"+typeof dato);
-}
-*/
-/*
-let opcionUser = prompt(`
-        Elija una opcion:
-        1.-  Libro
-        2.- Pelicula
-        3.- Juego
-    `);
-switch (opcionUser){
-    case "1":
-        console.log("Principito");
-        break;
-    case "2":
-        console.log("Matrix");
-        break;
-    case "3":
-        console.log("AOE");
-        break;
-    default:
-        console.log("Opcion no valida");
-        break;
-}
-*/
- let numero = 0;
- while(numero <=10){
-    console.log("Numero = "+numero);
-    numero++;
- }
