@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Usuarios</title>
+  <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+
+  <main style="padding: 2rem; max-width: 1200px; margin:auto;">
+
+    <h2>Agregar Usuario</h2>
+    <form action="/add" method="post" class="formulario">
+      <div class="coolinput">
+        <label for="name" class="text">Nombre</label>
+        <input type="text" id="name" name="name" class="input" placeholder="Nombre de usuario" required maxlength="45">
+      </div>
+
+      <div class="coolinput">
+        <label for="email" class="text">Correo</label>
+        <input type="email" name="email" id="email" class="input" placeholder="Correo electrónico" required maxlength="45">
+      </div>
+
+      <button type="submit" class="btn">Agregar</button>
+    </form>
+
+    <h1>Lista de Registros</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% users.forEach(user => { %>
+          <tr>
+            <td><%= user.id %></td>
+            <td><%= user.name %></td>
+            <td><%= user.email %></td>
+            <td>
+              <a href="/edit/<%= user.id %>" class="btn">Editar</a>
+              <a href="/eliminar/<%= user.id %>" class="btn">Eliminar</a>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+
+  </main>
+
+</body>
+</html>

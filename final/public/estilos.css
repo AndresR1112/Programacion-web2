@@ -1,0 +1,85 @@
+
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fefefe;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+  background-color: #dff0d8;
+}
+
+th {
+  color: #333;
+  background-color: #dff0d8;
+  padding: 12px;
+  text-align: center;
+  font-size: 1rem;
+  border-bottom: 3px solid #a3d3a1;
+}
+
+td {
+  padding: 12px;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  color: #555;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+.coolinput {
+  display: flex;
+  flex-direction: column;
+  max-width: 260px;
+  margin-bottom: 1rem;
+}
+
+.coolinput label.text {
+  font-size: 0.8rem;
+  color: #4a4a4a;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.coolinput input[type=text].input,
+.coolinput input[type=email].input {
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.coolinput input.input:focus {
+  outline: none;
+  border-color: #6bb3ff;
+  box-shadow: 0 0 0 3px rgba(107, 179, 255, 0.3);
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  font-weight: bold;
+  background: #6bb3ff;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.btn:hover {
+  background: #559fe8;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
